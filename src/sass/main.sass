@@ -38,7 +38,13 @@ $warm-grey: #898989
   display: none
 main
   position: relative
-
+.btn_green
+  font-size: 14px
+  line-height: 1.71
+  color: #ffffff
+  border:  none
+  border-radius: 2px
+  background: $medium-green
 //название продукта
 .content__heading
   margin: 0
@@ -65,6 +71,8 @@ main
   color: $greyish
 
 //навигация по продукту
+.reviews
+  margin: 0 0 111px
 .reviews-tabs
   margin: 40px 0 0
   &-list
@@ -135,21 +143,18 @@ main
 .reviews__leave-comment
   float: right
 .reviews__leave-comment
-  font-size: 14px
-  line-height: 1.71
-  color: #ffffff
-  border:  none
-  border-radius: 2px
-  background: $medium-green
   padding: 10px 30px
+.reviews__show-more
+  padding: 11px 106px
 // пост
 .post
-  &__heading
+  &__heading, .reply__heading
     padding: 0 0 0 57px
     position: relative
     display: flex
     justify-content: space-between
-  &__user-icon
+    align-items: center
+  &__user-icon, .reply__user-icon
     position: absolute
     border-radius: 50%
     left: 0
@@ -174,6 +179,7 @@ main
     justify-content: space-around
     .fa
       color: $warm-grey
+      margin: 0
     &:hover
       text-decoration: none
   li.post-socials__etc
@@ -188,12 +194,47 @@ main
   height: 8px
   border: solid 1px $warm-grey
   border-radius: 50%
-.post-content
+.post-content, .reply-content
   margin: 20px 0 0
   &__subject
     font-size: 18px
     line-height: 24px
-  p
+p
+  font-size: 16px
+  line-height: 24px
+  padding: 0 0 20px
+.post__estimates
+  margin: 0 0 20px
+.fa
+  margin: 0 8px 0 0
+.post__replies-count
+  margin: 0 0 0 12px
+i.replies
+  padding: 0 2px
+  border: solid 1px $charcoal-grey
+  border-radius: 2px
+.post-footer
+  display: flex
+  margin: 0 0 42px
+.post-actions
+  display: flex
+  &__like
+    margin: 0 19px 0
+    cursor: pointer
+  &__reply
+    cursor: pointer
+.post__date
+  color: $warm-grey
+  margin: 0 31px 0 0
+
+.reply
+  padding: 0 0 0 80px
+  &__user-name
+    color: $slate-two
+    margin: 0 5px 0 0
+    line-height: 1.5
     font-size: 16px
-    line-height: 24px
-    padding: 0 0 20px
+  &__to-name
+    color: $warm-grey
+    line-height: 1.5
+    font-size: 16px

@@ -1,7 +1,7 @@
 doctype html
 html(lang="ru")
     head
-        meta(charset="UTF8")
+        meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width")
         title Rate&Goods test
         link(rel="stylesheet" href="css/libs.min.css")
@@ -47,7 +47,7 @@ html(lang="ru")
                         li.reviews-tabs__item
                             span.reviews-tabs__link.reviews-tabs__link_active ОТЗЫВЫ (3)
                 h2.reviews__heading ВСЕ ОТЗЫВЫ (3)
-                    button.reviews__leave-comment ОСТАВИТЬ КОММЕНТАРИЙ
+                    button.reviews__leave-comment.btn_green ОСТАВИТЬ КОММЕНТАРИЙ
                     span.reviews__sort Сортировать по:
                         span.reviews__sort-date ДАТЕ
                         i.fa.fa-chevron-down
@@ -96,10 +96,12 @@ html(lang="ru")
                                     br
                                     |Вот что мне не понравилось, так это тягучесть и медленность повествования. В некоторые моменты, реально было скучно, но их было мало, так что, можно сказать, что это ложка дёгтя в бочке мёда.Исходя из вышеизложенного, получилась, некая вольная экранизация оригинальной игры, но со своими героями, временем и местом повествования. Хорошая, но с минусами.
                         .post__estimates
-                            i.fa.fa-heart-o
-                            span.post__likes-count 16
-                            span.post__replies-icon
-                            span.post__replies-count 3
+                            span.post__likes-count
+                                i.fa.fa-heart-o
+                                |16
+                            span.post__replies-count
+                                i.fa.fa-align-left.replies
+                                |3
                         .post-footer
                             .post__date 16 января в 12:27
                             .post-actions
@@ -107,15 +109,16 @@ html(lang="ru")
                                     i.fa.fa-heart-o
                                     | СПАСИБО
                                 .post-actions__reply
-                                    span.post__replies-icon
+                                    i.fa.fa-align-left.replies
                                     | ОТВЕТИТЬ
                         .post-reply.reply
                             .reply__heading
-                                img(src="").reply__user-icon
-                                span.reply__user-name Артём Власьев
-                                span.reply__to-name
-                                    i.fa.fa-mail-forward
-                                    |Наталья Рождественская
+                                .reply__user
+                                    img(src="http://placehold.it/49x49").reply__user-icon
+                                    span.reply__user-name Артём Власьев
+                                    span.reply__to-name
+                                        i.fa.fa-mail-forward
+                                        |Наталья Рождественская
                                 ul.post-socials.list-inline.list-unstyled
                                     li
                                         a(href="#").post-socials__link
@@ -144,26 +147,29 @@ html(lang="ru")
                                     p Фассбендеру явно тесно в рамках своего особо не прописанного персонажа. Он способен на глубокий драматизм, но картина того не требует. Сценарий больше походит на слепленные меж собой квесты. В общем, практически игра на большом экране. Также стоит отметить потрясающую физическую подготовку Фассбендера. «Кредо» богат на драки, на символическое пересечение прошлого и будущего, красиво оформленного спецэффектами.
                                     p В целом, это неплохое кино, только не стоит ждать от фильма чего-то сверх. Стилистика с экранизациями комиксов одна и та же, а наличие таких больших актёров, как Фассбендер и Айронс в данном случае ничего не меняют.
                             .post__estimates
-                                i.fa.fa-heart-o
-                                span.post__likes-count 22
-                                span.post__replies-icon
-                                span.post__replies-count 1
-                            post-footer
-                                post__date 16 января в 15:34
-                                post-actions
-                                    post-actions__like
+                                span.post__likes-count
+                                    i.fa.fa-heart-o
+                                    | 22
+                                span.post__replies-count
+                                    i.fa.fa-align-left.replies
+                                    | 1
+                            .post-footer
+                                .post__date 16 января в 15:34
+                                .post-actions
+                                    .post-actions__like
                                         i.fa.fa-heart-o
                                         | СПАСИБО
-                                    post-actions__reply
-                                        span.post__replies-icon
+                                    .post-actions__reply
+                                        i.fa.fa-align-left.replies
                                         | ОТВЕТИТЬ
                         .post-reply.reply
                             .reply__heading
-                                img(src="").reply__user-icon
-                                span.reply__user-name Диана Шерстова
-                                span.reply__to-name
-                                    i.fa.fa-mail-forward
-                                    | Артём Власьев
+                                .reply__user
+                                    img(src="http://placehold.it/49x49").reply__user-icon
+                                    span.reply__user-name Диана Шерстова
+                                    span.reply__to-name
+                                        i.fa.fa-mail-forward
+                                        | Артём Власьев
                                 ul.post-socials.list-inline.list-unstyled
                                     li
                                         a(href="#").post-socials__link
@@ -192,10 +198,12 @@ html(lang="ru")
                                     p Хорошо сняли паркуры. Красиво сделали графику. Но слабо развили сюжет. Те, кто в игру играл, понимают конфликт чуть лучше, а вот если за ассассинов вы не играли ни разу в жизни — для вас многое будет скучным и непонятным, готовьтесь.
                                     p Итог. Экранизация, несмотря на мощный трейлер, получилась откровенно слабая. Сродни игр того же Ubisoft, которые последние годы ожидаются с большим ажиотажем, а выходят глюченные, недопиленные и порой даже уже и неинтересные в плане сюжета. Идти ли на этот фильм в кино? Ну, если больше смотреть нечего — то можно. Но будет скучновато, готовьтесь.
                             .post__estimates
-                                i.fa.fa-heart-o
-                                span.post__likes-count 22
-                                span.post__replies-icon.hidden
+                                span.post__likes-count
+                                    i.fa.fa-heart-o
+                                    | 22
                                 span.post__replies-count.hidden
+                                    i.fa.fa-align-left.replies
+                                    |
                             .post-footer
                                 .post__date 18 января в 15:34
                                 .post-actions
@@ -203,13 +211,15 @@ html(lang="ru")
                                         i.fa.fa-heart-o
                                         | СПАСИБО
                                     .post-actions__reply
-                                        span.post__replies-icon
+                                        i.fa.fa-align-left.replies
                                         | ОТВЕТИТЬ
 
                     .post__heading
-                        img.post__user-icon
-                        span.post__user-name Наталья Графова
-                        span.post__user-occupation Эксперт R&G
+                        .post__user
+                            img(src="http://placehold.it/49x49").post__user-icon
+                            span.post__user-name Наталья Графова
+                            br
+                            span.post__user-occupation Эксперт R&G
                         ul.post-socials.list-inline.list-unstyled
                             li
                                 a(href="#").post-socials__link
@@ -243,10 +253,12 @@ html(lang="ru")
                             p Мне совершенно не жаль потраченного времени, но «Кредо убийц» явно не для всех зрителей. Фанатам игр он может понравиться, но человеку не знакомому с серией «Assassin`s Creed» надо подразобраться, чтобы понять всю суть. Например, непонимающему зрителю не будет ясно, почему Братство и Орден так долго бьются из-за какого-то Яблока, ведь фильм не дает на это внятного ответа. Хотя, если рассматривать этот фильм как аттракцион (так называл его сам режиссер картины), то обычный зритель может получить удовольствие от него.
                             p Фильм нельзя назвать провалом и нельзя назвать полной удачей. Я не знаком с другими экранизациями игр, поэтому мне не с чем сравнивать, но, не смотря на все немногочисленные минусы, «Кредо убийцы» меня удовлетворил. Хорошее фэнтези с захватывающей идеей. Финал, как я понял, намекает на вторую часть, но было бы неплохо обойтись и одной.
                     .post__estimates
-                        i.fa.fa-heart-o
-                        span.post__likes-count 27
-                        span.post__replies-icon.hidden
+                        span.post__likes-count
+                            i.fa.fa-heart-o
+                            | 27
                         span.post__replies-count.hidden
+                            i.fa.fa-align-left.replies
+                            |
                     .post-footer
                         .post__date 20 января в 22:37
                         .post-actions
@@ -254,9 +266,9 @@ html(lang="ru")
                                 i.fa.fa-heart-o
                                 | СПАСИБО
                             .post-actions__reply
-                                span.post__replies-icon
+                                i.fa.fa-align-left.replies
                                 | ОТВЕТИТЬ
-                button.reviews__show-more.text-uppercase Показать еще
+                button.reviews__show-more.text-uppercase.center-block.btn_green Показать еще
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
     script(src="js/libs.min.js")
     script(src="js/main.js")
